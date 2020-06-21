@@ -4,12 +4,16 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.lebron</groupId>
-    <artifactId>spring-learn</artifactId>
+    <artifactId>zeus</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <packaging>jar</packaging>
+    <modules>
+        <module>dubbo</module>
+        <module>core</module>
+        <module>leetcode</module>
+    </modules>
+    <packaging>pom</packaging>
 
-    <name>spring-learn</name>
-    <description>Demo project for Spring Boot</description>
+    <name>zeus</name>
 
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -32,6 +36,11 @@
 
         <dependency>
             <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-amqp</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
 
@@ -40,7 +49,25 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.apache.kafka/kafka-clients -->
+        <dependency>
+            <groupId>org.apache.kafka</groupId>
+            <artifactId>kafka-clients</artifactId>
+            <version>2.2.1</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.rabbitmq</groupId>
+            <artifactId>amqp-client</artifactId>
+            <version>4.0.2</version>
+        </dependency>
+
+
     </dependencies>
+
+
+
 
     <build>
         <plugins>
