@@ -10,6 +10,7 @@
         <module>dubbo</module>
         <module>core</module>
         <module>leetcode</module>
+        <module>sentinel</module>
     </modules>
     <packaging>pom</packaging>
 
