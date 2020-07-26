@@ -16,6 +16,8 @@ public class Config {
         ApplicationConfig config = new ApplicationConfig();
         config.setName("sentinel-dubbo");
         config.setOwner("sg");
+        int[] ss = new int[10];
+//        ss.length
         return config;
     }
 
